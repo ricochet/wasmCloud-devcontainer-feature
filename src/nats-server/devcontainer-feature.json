@@ -1,0 +1,17 @@
+{
+    "name": "NATS Server",
+    "id": "nats-server",
+    "version": "1.0.0",
+    "description": "Installs NATS server",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "latest",
+            "proposals": [
+                "latest",
+                "2.9.10"
+            ],
+            "description": "Select or enter version of the NATS server"
+        }
+    }
+}

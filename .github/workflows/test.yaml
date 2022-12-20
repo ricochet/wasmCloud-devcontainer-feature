@@ -13,11 +13,13 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - cosmonic
+          - emsdk
+          - nats-server
+          - rust-wasm
+          - wasi-sdk
+          - wasmcloud
         baseImage:
-          - debian:latest
-          - ubuntu:latest
           - mcr.microsoft.com/devcontainers/base:ubuntu
     steps:
       - uses: actions/checkout@v3

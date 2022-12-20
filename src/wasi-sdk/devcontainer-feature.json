@@ -1,0 +1,17 @@
+{
+    "name": "WASI SDK",
+    "id": "wasi-sdk",
+    "version": "1.0.0",
+    "description": "Installs WASI SDK",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "latest",
+            "proposals": [
+                "latest",
+                "17"
+            ],
+            "description": "Select or enter version of the WASI SDK"
+        }
+    }
+}

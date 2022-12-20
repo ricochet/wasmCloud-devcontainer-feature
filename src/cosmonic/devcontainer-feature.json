@@ -1,0 +1,16 @@
+{
+    "name": "Cosmonic CLI",
+    "id": "cosmonic",
+    "version": "1.0.0",
+    "description": "Installs cosmo CLI for interacting with the Cosmonic platform",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "latest",
+            "proposals": [
+                "latest"
+            ],
+            "description": "Select or enter version of cosmo"
+        }
+    }
+}

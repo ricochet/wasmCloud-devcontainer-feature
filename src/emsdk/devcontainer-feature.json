@@ -1,0 +1,17 @@
+{
+    "name": "Emscripten SDK",
+    "id": "emsdk",
+    "version": "1.0.0",
+    "description": "Installs emsdk",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "latest",
+            "proposals": [
+                "latest",
+                "2.0.26"
+            ],
+            "description": "Select or enter version of the EMSDK"
+        }
+    }
+}
