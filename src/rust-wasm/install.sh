@@ -1,5 +1,13 @@
 #!/bin/sh
-set -eux
+set -e
+
+# Checks if packages are installed and installs them if not
+check_packages() {
+    if ! dpkg -s "$@" > /dev/null 2>&1; then
+        apt_get_update
+        apt-get -y install --no-install-recommends "$@"
+    fi
+}
 
 check_packages ca-certificates
 

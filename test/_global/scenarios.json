@@ -1,5 +1,5 @@
 {
-    "wasmcloud_rust": {
+    "wasmcloud-rust": {
         "image": "mcr.microsoft.com/devcontainers/rust",
         "features": {
             "wasmcloud": {
