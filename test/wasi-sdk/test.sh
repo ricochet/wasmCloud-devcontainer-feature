@@ -25,7 +25,7 @@ ls /opt/wasi-sdk
 
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib.
-check "version" bash -c "ls /opt/wasi-sdk"
+check "clang" bash -c "ls /opt/wasi-sdk/bin | grep 'clang'"
 
 # Report results
 # If any of the checks above exited with a non-zero exit code, the test will fail.
