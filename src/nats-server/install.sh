@@ -9,14 +9,17 @@ if [ "${VERSION}" = "latest" ] || [ "${VERSION}" = "lts" ]; then
     NATS_VERSION="2021.11"
 fi
 
-apkArch="$(apk --print-arch)"; \
-case "$apkArch" in \
+arch="$(uname -m)"; \
+case "$arch" in \
+  arm64) natsArch='arm64'; sha256='6e1378b40ff5b70fa664c885d5dad88daf0d6040d48c864e0e92a3f19565613a' ;; \
   aarch64) natsArch='arm64'; sha256='6e1378b40ff5b70fa664c885d5dad88daf0d6040d48c864e0e92a3f19565613a' ;; \
+  armv8b) natsArch='arm64'; sha256='6e1378b40ff5b70fa664c885d5dad88daf0d6040d48c864e0e92a3f19565613a' ;; \
+  armv8l) natsArch='arm64'; sha256='6e1378b40ff5b70fa664c885d5dad88daf0d6040d48c864e0e92a3f19565613a' ;; \
   armhf) natsArch='arm6'; sha256='cae799c7aec05671b0f9b11fd5eaa347a59e7b53351f74aafecf2a19560ef503' ;; \
   armv7) natsArch='arm7'; sha256='7eb3de1f7c1aa437b0b92f7caec3206739a28fe3fec8e335b13cad6570ee7ca5' ;; \
   x86_64) natsArch='amd64'; sha256='1dc0829c9cddbc9474a768853d464bd8b32cdaa51f66633825a20462b36071c8' ;; \
   x86) natsArch='386'; sha256='853990c198be636d6b99bf3bfedb75804c51bbf376a7c381aab52ac8add2f2ca' ;; \
-  *) echo >&2 "error: $apkArch is not supported!"; exit 1 ;; \
+  *) echo >&2 "error: $arch is not supported!"; exit 1 ;; \
 esac;
 
 wget -O nats-server.tar.gz "https://github.com/nats-io/nats-server/releases/download/v${NATS_VERSION}/nats-server-v${NATS_VERSION}-linux-${natsArch}.tar.gz";

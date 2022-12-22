@@ -3,8 +3,9 @@
     "id": "wasmcloud",
     "version": "1.0.0",
     "description": "Installs wasmcloud",
-    "installAfter": [
-        "ghcr.io/ricochet/wasmCloud-devcontainer-feature/nats-server:latest",
-        "ghcr.io/ricochet/wasmCloud-devcontainer-feature/rust-wasm:latest"
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils",
+        "../rust-wasm",
+        "../nats-server"
     ]
 }

@@ -13,5 +13,8 @@
             ],
             "description": "Select or enter version of the WASI SDK"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
 }

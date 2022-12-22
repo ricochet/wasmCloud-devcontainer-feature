@@ -12,5 +12,8 @@
             ],
             "description": "Select or enter version of cosmo"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
 }

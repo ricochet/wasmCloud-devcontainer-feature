@@ -9,9 +9,12 @@
             "default": "latest",
             "proposals": [
                 "latest",
-                "2.0.26"
+                "3.1.28"
             ],
             "description": "Select or enter version of the EMSDK"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
 }

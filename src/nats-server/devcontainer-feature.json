@@ -13,5 +13,8 @@
             ],
             "description": "Select or enter version of the NATS server"
         }
-    }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
 }

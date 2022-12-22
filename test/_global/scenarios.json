@@ -1,0 +1,12 @@
+{
+    "wasmcloud_rust": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "wasmcloud": {
+                "version": "latest"
+            },
+            "rust-wasm": {
+            }
+        }
+    }
+}

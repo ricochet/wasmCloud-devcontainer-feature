@@ -1,13 +1,14 @@
 
-# NATS Server
+# Rust toolchain updates for building with Wasm
 
-A feature for installing NATS Server
+A feature for updating the Rust toolchain updates for building with Wasm.
+This feature is only compatible with the Rust base.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/ricochet/wasmCloud-devcontainer-feature/nats-server:1": {
+    "ghcr.io/ricochet/wasmCloud-devcontainer-feature/rust-wasm:1": {
         "version": "latest"
     }
 }
