@@ -1,15 +1,13 @@
 
-# NATS Server
+# NATS Server (nats-server)
 
-A feature for installing NATS Server
+Installs NATS server
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/ricochet/wasmCloud-devcontainer-feature/nats-server:1": {
-        "version": "latest"
-    }
+    "ghcr.io/ricochet/wasmCloud-devcontainer-feature/nats-server:1": {}
 }
 ```
 
@@ -17,6 +15,10 @@ A feature for installing NATS Server
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Version of NATS Server to install. | string | latest |
+| version | Select or enter version of the NATS server | string | latest |
+
+
 
 ---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ricochet/wasmCloud-devcontainer-feature/blob/main/src/nats-server/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

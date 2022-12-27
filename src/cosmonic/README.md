@@ -1,17 +1,13 @@
 
-# Cosmonic
+# Cosmonic CLI (cosmonic)
 
-A feature for installing Cosmonic tooling like the cosmo CLI.
-
-TODO move out of this repo.
+Installs cosmo CLI for interacting with the Cosmonic platform
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/ricochet/wasmCloud-devcontainer-feature/cosmonic:1": {
-        "version": "latest"
-    }
+    "ghcr.io/ricochet/wasmCloud-devcontainer-feature/cosmonic:1": {}
 }
 ```
 
@@ -19,6 +15,10 @@ TODO move out of this repo.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Version of cosmo to install. | string | latest |
+| version | Select or enter version of cosmo | string | latest |
+
+
 
 ---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ricochet/wasmCloud-devcontainer-feature/blob/main/src/cosmonic/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._

@@ -1,27 +1,24 @@
 
-# Rust toolchain updates for building with Wasm
+# NATS Server (nats-server)
 
-A feature for updating the Rust toolchain updates for building with Wasm.
-This feature is only compatible with the Rust base.
+Installs NATS server
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/ricochet/wasmCloud-devcontainer-feature/rust-wasm:1": {
-        "version": "latest"
-    }
+    "ghcr.io/ricochet/wasmCloud-devcontainer-feature/nats-server:1": {}
 }
-```
-
-```bash
-cargo generate --git https://github.com/wasmCloud/new-actor-template
 ```
 
 ## Options
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Version of NATS Server to install. | string | latest |
+| version | Select or enter version of the NATS server | string | latest |
+
+
 
 ---
+
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/ricochet/wasmCloud-devcontainer-feature/blob/main/src/rust-wasm/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
