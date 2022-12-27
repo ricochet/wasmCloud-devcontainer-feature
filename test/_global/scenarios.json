@@ -8,5 +8,16 @@
             "rust-wasm": {
             }
         }
+    },
+    "wasmcloud-rust-vscode": {
+        "image": "mcr.microsoft.com/devcontainers/rust",
+        "remoteUser": "vscode",
+        "features": {
+            "wasmcloud": {
+                "version": "latest"
+            },
+            "rust-wasm": {
+            }
+        }
     }
 }
